@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Grid cell dimensions -->
+    <dimen name="grid_cell_width">64dp</dimen>
+    <dimen name="grid_cell_height">64dp</dimen>
+    
+    <!-- Left/right thumb buttons -->
+    <dimen name="thumb_btn_top_margin">120dp</dimen>
+    <dimen name="thumb_btn_side_margin">25dp</dimen>
+    <dimen name="thumb_btn_size">96dp</dimen>
+    
+    <!-- Target dimensions -->
+    <dimen name="target_btn_size">64dp</dimen>
+    
+</resources>

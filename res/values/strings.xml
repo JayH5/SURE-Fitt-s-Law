@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SURE: Fitt\'s Law</string>
+    <string name="menu_settings">Settings</string>
+    
+    <!-- Buttons in the testing activity -->
+    <string name="btn_save_text">Save measurements</string>
+    <string name="btn_clear_text">Clear measurements</string>
+    <string name="btn_view_heatmap_text">View heatmap</string>
+
+    <!-- The alert dialog when calibrating for Fitt's Law -->
+    <string name="dialog_title">Calibrate Fitt\'s Law estimate</string>
+    <string name="dialog_message">Are you sure you want to calibrate the Fitt\'s Law algorithm to estimate the response time at this location?</string>
+    <string name="dialog_negative_button">No</string>
+    <string name="dialog_positive_button">Yes</string>
+    
+    <string-array name="heatmap_states">
+        <item>Mean</item>
+        <item>Max</item>
+        <item>Min</item>
+        <item>Standard deviation</item>
+        <item>Distance</item>
+        <item>Sample size</item>
+        <item>Fitt\'s Law</item>
+        <item>Fitt\'s Law error</item>
+    </string-array>
+    
+    <string name="title_activity_heatmap">Heatmap</string>
+
+</resources>

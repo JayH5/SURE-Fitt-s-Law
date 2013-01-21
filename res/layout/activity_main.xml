@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/btn_target"
+        android:layout_width="@dimen/target_btn_size"
+        android:layout_height="@dimen/target_btn_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_target_background" />
+
+    <ImageButton
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/thumb_btn_size"
+        android:layout_height="@dimen/thumb_btn_size"
+        android:layout_marginLeft="@dimen/thumb_btn_side_margin"
+        android:layout_marginTop="@dimen/thumb_btn_top_margin"
+        android:background="@drawable/btn_left_background" />
+
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:layout_width="@dimen/thumb_btn_size"
+        android:layout_height="@dimen/thumb_btn_size"
+        android:layout_alignTop="@+id/btn_left"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/thumb_btn_side_margin"
+        android:background="@drawable/btn_right_background" />
+    
+    <Button 
+        android:id="@+id/btn_view_heatmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_view_heatmap_text" />
+
+</RelativeLayout>
