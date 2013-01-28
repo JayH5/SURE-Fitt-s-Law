@@ -3,7 +3,6 @@ package com.jamie.surefittslaw.tasks;
 import java.util.List;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.jamie.surefittslaw.models.MeasurementAnalysis;
 import com.jamie.surefittslaw.models.MeasurementGrid;

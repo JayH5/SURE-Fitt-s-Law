@@ -2,14 +2,18 @@ package com.jamie.surefittslaw.tasks;
 
 import java.util.Queue;
 
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.jamie.surefittslaw.models.Measurement;
 import com.jamie.surefittslaw.models.MeasurementDatabase;
 
 public class DatabaseSaveTask extends AsyncTask<Queue<Measurement>, Void, Void> {
 
+	private static final String TAG = "DatabaseSaveTask";
+	
 	private MeasurementDatabase mDatabase;
 	
 	public DatabaseSaveTask(MeasurementDatabase db) {
@@ -30,6 +34,9 @@ public class DatabaseSaveTask extends AsyncTask<Queue<Measurement>, Void, Void> 
 				db.insert(MeasurementDatabase.TABLE_NAME_LANDSCAPE, null, 
 						measurements.remove().toContentValues());
 			}
+			
+			Log.d(TAG, "Database entries saved. New database size: " + 
+					DatabaseUtils.queryNumEntries(db, MeasurementDatabase.TABLE_NAME_LANDSCAPE));
 			
 			db.close();
 		}

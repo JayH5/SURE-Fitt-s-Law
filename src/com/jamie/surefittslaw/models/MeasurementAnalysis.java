@@ -11,7 +11,7 @@ import android.util.Log;
 
 public class MeasurementAnalysis {
 	public static final int SLOPE = 100;
-	public static final int INTERCEPT = 500;
+	public static final int INTERCEPT = 600;
 	
 	private int mWidth;
 	private int mHeight;
